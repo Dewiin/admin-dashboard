@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Fontdiner+Swanky&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+img[src$='.svg'] {
+    height: 1.5rem;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+
+/* Sidebar (Left) */
+.containerSidebar {
+    background-color: rgb(36, 174, 254);
+    grid-column: 1 / 2;
+}  
+
+.sidebarLogo {
+    display: flex;
+    align-items: center;   
+    color: rgb(255, 255, 255);
+}
+
+.sidebarLogo img {
+    height: 2.5rem;
+    margin: 0.6rem;
+}
+
+.newRow {
+    height: 3rem;
+}
+
+.sidebarLinks ul > * {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.sidebarLinks ul > * img {
+    margin: 0.6rem 1rem;
+}
+
+
+/* Content (Right) */
+.containerContent {
+    background-color: rgb(225, 225, 225);
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 3fr 1fr;
+}
+
+.contentHeader {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgb(200, 200, 200);
+}
+
+.contentArticles {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    margin: 1rem;
+}
+
+.contentAnnouncements {
+    grid-row: 2 / 3;
+    margin: 1rem 2rem;
+}
+
+.contentTrending {
+    grid-row: 3 / 4;
+    margin: 1rem 2rem;
+}
+
+/* Content Header */
+.contentHeader {
+    display: grid;
+}
+
+.headerSearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3rem;
+}
+
+.headerSearch div {
+    display: flex;
+    align-items: center;
+}
+
+.searchLeft {
+    gap: 1rem;
+}
+.searchRight {
+    gap: 2rem;
+}
+
+.searchLeft input {
+    border-radius: 20px;
+    width: min(700px, 40vw);
+    border: none;
+    background-color: rgb(225, 225, 225);
+    padding: 0.3rem 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.miniProfile {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #FFC000;
+    border-radius: 100%;
+}
+
+.headerUpdates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3rem 1rem;
+}
+
+.headerUpdates > div {
+    display: flex;
+    align-items: center;
+}
+.updatesLeft {
+    gap: 1rem;
+}
+.updatesRight {
+    gap: 2rem;
+}
+
+.profile {
+    height: 4rem;
+    width: 4rem;
+    background-color: #FFC000;
+    border-radius: 100%;
+}
+
+.updatesRight button {
+    width: 5rem;
+    height: 2.2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(36, 174, 254);
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Content Articles */
+.cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    height: 80%;
+}
+
+.card {
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgb(200, 200, 200);
+    border-radius: 10px;
+    border-left: 10px solid #FFC000;
+    padding: 0 2rem;
+    min-height: 12rem;
+    min-width: 25rem;
+}
+
+.card p {
+    height: 40%;
+    margin-bottom: 0;
+}
+
+.cardIcons {
+    text-align: right;
+    letter-spacing: 1rem;
+}
+
+/* Content Announcements */
+.announcements {
+    background-color: rgb(255, 255, 255);
+    padding: 0 2rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(200, 200, 200);
+}
+.announcements h5 {
+    margin: 0;
+}
+.announcements p {
+    margin: 0;
+    font-size: 12px;
+}
+.announcements > :nth-child(2) {
+    border-top: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.announcements > div {
+    padding: 2rem 0;
+}
+
+/* Content Trending */
+.trending {
+    background-color: rgb(255, 255, 255);
+    padding: 0 1.5rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(200, 200, 200);
+}
+
+.trending > div {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trending > div h5 {
+    margin: 0;
+}
+
+.trending > div p {
+    margin: 0;
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+}
+
+/* Effects */
+.updatesRight button:hover {
+    cursor: pointer;
+    background-color: rgb(255,69,0);
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.sidebarLinks li:hover {
+    cursor: pointer;
+    background-color: rgb(255,69,0);
+    transform: scale(1.02);
+    transition-duration: 0.1s;
+}
+
+.cardIcons img:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition-duration: 0.1s;
+}
+
+.headerSearch img:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition-duration: 0.1s;
+}
+
+.miniProfile:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
+
+.profile:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
