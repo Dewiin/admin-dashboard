@@ -20,7 +20,7 @@
 </details>
 
 ## Introduction
-A simple and responsive admin dashboard built with HTML, CSS, and JavaScript. Easily visualize and manage data in a clean interface!
+A simple and responsive admin dashboard built with HTML, CSS, and JavaScript. Easily visualize and manage data in a clean interface! 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
 ## Features
