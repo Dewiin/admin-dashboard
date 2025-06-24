@@ -46,7 +46,7 @@ A simple and responsive admin dashboard built with HTML, CSS, and JavaScript. Ea
 ## Demo
 <div align="center">
     <img src="./assets/dashboard_demo.png" alt="demo video">
-</div
+</div>
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
 
