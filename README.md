@@ -14,6 +14,7 @@
     <li>
     <a href="#features">Features</a>
     </li>
+    <li><a href="#demo">Demo</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
 </ol>
@@ -39,6 +40,13 @@ A simple and responsive admin dashboard built with HTML, CSS, and JavaScript. Ea
 ## Future Improvements
 - [ ] Add dynamic content so users can update and modify data.
 - [ ] Add user authentification
+<p align="right"><a href="#readme-top">Back to top</a></p>
+
+
+## Demo
+<div align="center">
+    <img src="./assets/dashboard_demo.png" alt="demo video">
+</div
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
 
